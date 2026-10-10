@@ -54,7 +54,7 @@ ROOT_URLCONF = 'builder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,3 +125,14 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+#added manually
+
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    
+]
+
+# {% load static %}
+# <img src="{% static 'my_app/example.jpg' %}" alt="My image">
