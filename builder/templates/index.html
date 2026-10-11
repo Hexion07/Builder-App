@@ -12,29 +12,45 @@
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js" integrity="sha384-BJf/nQgxZJU68GxBse97Vdlc8Rh+z9PzzXiS3/BjV+1nQPR7IKn+iJnD3DJvCMaU" crossorigin="anonymous"></script>
 
 
-<nav class="navbar md:navbar-expand bg-1 fg-2 ">
+<nav class="navbar p-3 bg-warning bg-gradient fg-contrast-warning">
   <div class="container-fluid">
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo01" aria-labelledby="navbarTogglerDemo01Label">
-      <div class="drawer-header">
-        <h2 class="drawer-title fs-5 fw-bold" id="navbarTogglerDemo01Label">Builder App</h2>
+    <a class="navbar-brand fs-5xl" href="#">
+      <img src="https://logoworks.com/wp-content/uploads/2014/03/fruit-vegetable-logos-templates-logo-designs-037-1.png" alt="Logo" width="135" height="90" class="d-inline-block align-text-top">
+      Builder App
+    </a>
+</nav>
 
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-      </div>
-      <div class="drawer-body">
-        <a class="navbar-brand" href="#">Hidden brand</a>
-        <ul class="navbar-nav me-auto mb-2 md:mb-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn-outline theme-success" type="submit">Search</button>
-        </form>
-      </div>
-    </dialog>
+<div class="nav-overflow fs-2xl p-3 bg-warning bg-gradient fg-contrast-warning" data-bs-toggle="nav-overflow">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link fw-bold" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item fs-2xl" href="#">Action</a>
+              <a class="menu-item fs-2xl" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item fs-2xl" href="#">Something else here</a>
+            </div>
+          </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Help</a>
+    </li>
+  </ul>
+</div>
+
+<nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2xl">Welcome</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn-outline theme-success" type="submit">Search</button>
+    </form>
   </div>
 </nav>
